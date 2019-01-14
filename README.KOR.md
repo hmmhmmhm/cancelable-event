@@ -2,6 +2,8 @@
 
 # **Cancelable-event**
 
+[![Build Status](https://travis-ci.org/hmmhmmhm/cancelable-event.svg?branch=master)](https://travis-ci.org/hmmhmmhm/cancelable-event)
+
 > 취소 가능한, 
 >
 > 우선순위가 있는,

@@ -27,5 +27,8 @@
     "capsulable": "^1.1.1",
     "stack-trace": "0.0.10"
   },
+  "engines": {
+    "node": ">=8"
+  },
   "devDependencies": {}
 }
