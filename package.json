@@ -1,0 +1,33 @@
+{
+  "name": "cancelable-event",
+  "version": "1.0.0",
+  "description": "Event concept in which the listener can cancel based on priority",
+  "main": "cancelable.js",
+  "scripts": {
+    "test": "node ./test/testunit.js"
+  },
+  "keywords": [
+    "Events",
+    "Emitter",
+    "Handler",
+    "Emit",
+    "Event",
+    "Cancelable",
+    "Priority",
+    "Dispatcher",
+    "Cancelable Event",
+    "Priority Event",
+    "EventEmitter",
+    "EventHandler",
+    "EventDispatcher"
+  ],
+  "author": "hmmhmmhm",
+  "license": "MIT",
+  "dependencies": {
+    "capsulable": "^1.1.1",
+    "stack-trace": "0.0.10"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1"
+  }
+}
