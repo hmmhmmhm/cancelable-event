@@ -12,7 +12,7 @@
 
 
 
-The Cancelable module is an event propagation-processing module, inspired by the **EventEmitter** in ``'Node.JS''' and **Bukit Plugin**" in ``"Minecraft"" . Licenses are MIT and freely available, and Compatible with your browser via **Webpack**.
+The Cancelable module is an event propagation-processing module, inspired by the **EventEmitter** in ```Node.JS``` and **Bukit Plugin** in ```Minecraft```. Licenses are MIT and freely available, and Compatible with your browser via **Webpack**.
 
 
 

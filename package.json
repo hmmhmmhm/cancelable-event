@@ -1,6 +1,6 @@
 {
   "name": "cancelable-event",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Event concept in which the listener can cancel based on priority",
   "main": "cancelable.js",
   "scripts": {
