@@ -5,18 +5,29 @@ const Capsule = require('capsulable/src/capsule')
 const _private = Capsule('private')
 
 const Trace = ()=>{
-    let stack = StackTrace.get()
     let traceData = []
-    for(let traceItem of stack){
-        traceData.push({
-            text: traceItem.toString(),
-            fileName: traceItem.getFileName(),
-            lineNumber: traceItem.getLineNumber(),
-            columnNumber: traceItem.getColumnNumber(),
-            typeName: traceItem.getTypeName(),
-            functionName: traceItem.getFunctionName()
-        })
-    }
+    try{
+        let stack = StackTrace.get()
+        for(let stackItem of stack){
+            let traceItem = {
+                text: '',
+                fileName: '',
+                lineNumber: null,
+                columnNumber: null,
+                typeName: '',
+                functionName: ''
+            }
+            try{
+                traceItem.text = stackItem.toString()
+                traceItem.fileName = stackItem.getFileName()
+                traceItem.lineNumber = stackItem.getLineNumber()
+                traceItem.columnNumber = stackItem.getColumnNumber()
+                traceItem.typeName = stackItem.getTypeName()
+                traceItem.functionName = stackItem.getFunctionName()
+            }catch(e){}
+            traceData.push(traceItem)
+        }
+    }catch(e){}
     return traceData
 }
 
